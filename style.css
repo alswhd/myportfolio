@@ -71,35 +71,72 @@ margin-top:7px;
 
 }
 
+
+/* overflow:hidden 부분 ------------------------------------------------------*/
+
+
 header .allmeun_wrap{
     position:fixed;
     right:0;
     top:0;
-    width:230px;
-    height:100vh;
-    background:#fff
+    width:11.5rem;
+    height:100%;
+    background:#fff;
+   
+   
     
 }
-header .allmeun_logo{
+header .home{
     margin-top:10px;
     display:flex;
+    justify-content: space-between;
+   
     
-    align-items: center;
 }
 
-header .allmeun_logo a{
-    display:block;
-    background:url(../imges/icon/logo.png) no-repeat;
+header .home a{
+
+    background:url(../imges/icon/home1.png) no-repeat 10% 50%;
     width:230px;
-    height:66px;
-    
+    height:40px;
+   
 }
+
+header .home span{
+    display:block;
+    position:relative;
+    width:50px;
+    cursor: pointer;
+   
+}
+
+header .home span:before,
+header .home span:after{
+    content:'';
+    right:5px;
+    top:46%;
+    position:absolute;
+    width:20px;
+    height:1px;
+    background:#262626;
+    transform: translate(-50% -50%);
+    transform:rotate(45deg);
+}
+
+header .home span::after{
+    transform:rotate(-45deg);
+    transform: translate(-50% -50%);
+}
+
 header .allmeun_wrap{
+    background:#fff;
     display:none;
+   
 }
 
 header .allmeun_wrap.on{
     display:block;
+   
 }
 
 
@@ -164,14 +201,18 @@ header .allmeun_wrap nav ul li a .icon-e{
 }
 
 header .sns_wrap{
-    margin:20px 16px;
-    
+    margin:20px auto;
+   
+   
 }
 
 header .sns_wrap ul{
     display:flex;
     align-items: center;
-    margin:0 16px;
+    justify-content: center;
+   
+   
+    
 }
 
 header .sns_wrap ul li ~ li{
@@ -182,8 +223,63 @@ header .sns_wrap ul li a{
     display:block;
     width:40px;
     height:40px;
+   
 }
 
+header .allmeun_wrap .util-list{
+    margin:0 auto;
+}
+
+
+
+header .allmeun_wrap .util-list ul li a{
+    display:flex;
+    align-items: center;
+    margin-left:30px;
+    height:60px;
+    font-size:16px;
+}
+
+header .allmeun_wrap .util-list ul li a .icon-1{
+    background:url(../imges/icon/mypage.png) no-repeat 50% 50%;
+    width:35px;
+    height:38px;
+    display:block;
+    margin-right:8px;
+}
+
+header .allmeun_wrap .util-list ul li a .icon-2{
+    background:url(../imges/icon/notice.png) no-repeat 50% 50%;
+    width:40px;
+    height:38px;
+    display:block;
+    margin-right:8px;
+}
+
+header .allmeun_wrap .util-list ul li a .icon-3{
+    background:url(../imges/icon/faq.png) no-repeat 50% 50%;
+    width:35px;
+    height:38px;
+    display:block;
+    margin-right:8px;
+}
+
+header .allmeun_wrap .util-list ul li a .icon-4{
+    background:url(../imges/icon/center.png) no-repeat 50% 50%;
+    width:35px;
+    height:38px;
+    display:block;
+    margin-right:8px;
+}
+
+header .allmeun_wrap .util-list ul li a .icon-5{
+    background:url(../imges/icon/card.png) no-repeat 50% 50%;
+    width:35px;
+    height:38px;
+    display:block;
+    margin-right:8px;
+}
+/* overflow:hidden 부분 ------------------------------------------------------*/
 
 
 /* main-------------------------------------------------------- */
@@ -402,17 +498,17 @@ main .list ul li .more{
     cursor: pointer;
 }
 
+
+
+/* footer 영역-------------------------------------------------------------*/
+
 footer{
     background:#121212;
     position:fixed;
     left:0;
     bottom:0;
     right:0;
-    
-
 }
-
-
 
 .footer_wrap ul{
     display:flex;
