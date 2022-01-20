@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twosome_main</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="twosome.html">logo</a>
+        </div>
+        <div class="menu">
+            <a href="#">menu</a>
+        </div>
+            <div class="allmeun_wrap">
+            <div class="allmeun_logo">
+                <a href="#"></a>
+            </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="icon-a"></i>
+                                투썸하트</a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="icon-b"></i>
+                                쿠폰함</a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="icon-c"></i>
+                                이벤트</a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="icon-d"></i>
+                                선물하기</a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="icon-e"></i>
+                                기프트카드</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <div class="sns_wrap">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="imges/icon/sns_icon01.png" alt="카카오">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="imges/icon/sns_icon02.png" alt="네이버">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="imges/icon/sns_icon03.png" alt="유튜브">
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+           
+    </header>
+    <main>
+        <div class="main_wrap">
+            <img src="imges/images/main_1920.jpg" alt="bg">
+        </div>
+        <div class="notice">
+            <div class="notice_wrap">
+                <span class="bell">bell</span>
+                <p class="text_a">고객센터 임시 운영 제한 안내</p>
+                <span class="row">row</span>
+            </div>
+        </div>
+        <div class="menu_wrap">
+            <ul>
+                <li>MENU</li>
+                <li>COFFEE</li>
+                <li>DESSERT</li>
+                <li>DELI</li>
+            </ul>
+        </div>
+        <div class="latte_img">
+            <a href="#">
+                <img src="imges/images/menu01.png" alt="연유 라떼">
+            </a>
+        </div>
+            
+            <div class="paging_wrap">
+                <p>스페니쉬 연유 라떼</p>
+                <a href="#" class="prev"></a>
+                <span class="paging_a">1</span>
+                <span class="paging_b">2</span>
+                <span class="paging_c">3</span>
+                <a href="#" class="next"></a>
+            </div>
+            <div class="search_wrap">
+                <span class="box_a">
+                    <p class="text_b">#아메리카노</p>
+                    <img src="imges/icon/search.png" alt="써치">
+                </span>
+            </div>
+
+           <div class="list">
+               <ul>
+                   <li>
+                       <span class="icon_a"></span>
+                       <div class="text_c">
+                           <strong>투썸리워드</strong>
+                           <p>다양한 투썸만의 리워드 혜택을 누리세요.</p>
+                       </div>
+                       <span class="more">더보기</span>
+                   </li>
+                   <li>
+                        <span class="icon_b"></span>
+                        <div class="text_c">
+                            <strong>마이카드</strong>
+                            <p>한 번의 결제로 CJ ONE및 스탬프를 적립하세요.</p>
+                        </div>
+                        <span class="more">더보기</span>
+                    </li>
+                    <li>
+                        <span class="icon_c"></span>
+                        <div class="text_c">
+                            <strong>스탬프</strong>
+                            <p>제품 구매시 스탬프 적립 혜택이 제공됩니다.</p>
+                        </div>
+                        <span class="more">더보기</span>
+                    </li>
+               </ul>
+           </div>
+    </main>
+    <footer>
+        <div class="footer_wrap">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon home">홈</span>
+                        <strong>홈</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon order">투썸오더</span>
+                        <strong>투썸오더</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon onetouchorder">원터치 오더</span>
+                        <strong>원터치 오더</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon cake">홀케이크 예약</span>
+                        <strong>홀케이크 예약</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        menu.addEventListener('click',function(){
+            if(allmeun_wrap.classList.contains('on')){
+                allmeun_wrap.classList.remove('on');
+            }else{
+                allmeun_wrap.classList.add('on');
+            }
+        });
+    </script>
+</body>
+</html>
