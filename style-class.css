@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    width:100%;
+    font-size:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow:hidden;
+    
+}
+
+ul{
+    list-style-type:none;
+}
+
+a{
+    text-decoration:none;
+    color:#262626;
+}
+
+img{
+ border:none;
+ vertical-align:top;
+}
+
+/*header*/
+
+#header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:6rem;
+    /*background-color: #262626;*/
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left:5rem;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    z-index:9999;
+}
+
+#header .menu_wrap{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   
+}
+
+#header .menu_wrap > ul{
+    display:flex;
+}
+
+#header .menu_wrap > ul > li{
+    position:relative;
+}
+#header .menu_wrap > ul > li > a{
+    display:block;
+    color:#888888;
+    height:6rem;
+    padding:0 2rem;
+    width:4rem;
+    position: relative;
+    font-size:0.9rem;
+    line-height:6rem;
+    text-align: center;
+}
+
+#header .menu_wrap > ul > li > a:before{
+    content:'';
+    height:3px;
+    width:0;
+    background-color:#ff000c;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+#header .menu_wrap > ul > li > a:hover{
+    font-size:1rem;
+    color:#fff;
+    transition:0.3s;
+}
+
+#header .menu_wrap > ul > li:hover > a:before{
+    width:70%;
+}
+
+
+
+/*서브메뉴 영역*/
+
+#header .menu_wrap .sub_menu{
+    position:absolute;
+    left:0;
+    top:6rem;
+    background:#262626;
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
+    height:14rem;
+    padding-top:20px;
+    display:none;
+   
+}
+
+#header .menu_wrap .sub_menu li a{
+    display:block;
+    padding:10px 0;
+    font-size:0.75rem;
+    color:#888888;
+}
+#header .menu_wrap .sub_menu li a:hover{
+    font-size:0.85rem;
+    color:#fff;
+    transition:0.3s;
+}
+
+
+/* 게임스타트 영역*/
+
+#header .game_wrap{
+    display:flex;
+    width:16rem;
+    align-items: center;
+}
+
+#header .game_wrap .login{
+    margin:10px 10px 0 0;
+}
+
+
+/* class 영역*/
+
+#main_wrap{
+    display:flex;
+   
+}
+#main_wrap p{
+    color:#fff;
+    text-align: center;
+    font-size:36px;
+    font-family: 'Luxurious Roman', cursive;
+    text-transform: uppercase;
+    margin-top:20px;
+}
+/*전사 영역*/
+#main_wrap .warrior{
+    position:relative;
+}
+#main_wrap .warrior .warrior_icon{
+    position:absolute;
+    left:50%;
+    bottom:25%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+   
+}
+/*격투가 영역*/
+#main_wrap .fighter{
+    position:relative;
+}
+
+#main_wrap .fighter .fighter_icon{
+    position:absolute;
+    left:50%;
+    bottom:24%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+   
+}
+/*헌터 영역*/
+
+#main_wrap .hunter{
+    position:relative;
+}
+
+#main_wrap .hunter .hunter_icon{
+    position:absolute;
+    left:50%;
+    bottom:24%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+  
+}
+
+/*마법사 영역*/
+
+#main_wrap .magician{
+    position: relative;
+}
+
+#main_wrap .magician .magician_icon{
+    position:absolute;
+    left:50%;
+    bottom:24%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+ 
+}
+
+/*암살자 영역*/
+
+#main_wrap .assassin{
+    position:relative;
+}
+
+#main_wrap .assassin .assassin_icon{
+    position:absolute;
+    left:50%;
+    bottom:24%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    
+}
+
