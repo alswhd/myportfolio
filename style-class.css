@@ -43,6 +43,11 @@ img{
     padding-left:5rem;
     border-bottom:1px solid rgba(255,255,255,0.2);
     z-index:9999;
+    transition:0.3s;
+}
+
+#header.on{
+    background-color:#111111;
 }
 
 #header .menu_wrap{
@@ -62,7 +67,7 @@ img{
 }
 #header .menu_wrap > ul > li > a{
     display:block;
-    color:#888888;
+    color:#fff;
     height:6rem;
     padding:0 2rem;
     width:4rem;
@@ -85,7 +90,7 @@ img{
 }
 #header .menu_wrap > ul > li > a:hover{
     font-size:1rem;
-    color:#fff;
+    color:#ff000c;
     transition:0.3s;
 }
 
@@ -101,14 +106,17 @@ img{
     position:absolute;
     left:0;
     top:6rem;
-    background:#262626;
+    background:#111111;
     width:100%;
     text-align: center;
     box-sizing: border-box;
     height:14rem;
     padding-top:20px;
     display:none;
-   
+    transition:0.3;
+}
+#header .menu_wrap .sub_menu.down{
+    display:block;
 }
 
 #header .menu_wrap .sub_menu li a{
@@ -163,6 +171,144 @@ img{
     text-align:center;
    
 }
+/*전사 영역 hidden*/
+#main_wrap .warrior .mouse_hover{
+    width:100%;
+    height:100%;
+    background-color:#262626;
+    position:absolute;
+    z-index:20;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    transition:0.3s;
+    opacity:0;
+    
+}
+#main_wrap .warrior .mouse_hover.on{
+    opacity:1;
+}
+
+#main_wrap .warrior .mouse_hover .icon_box{
+    display:flex;
+    width:200px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+#main_wrap .warrior .mouse_hover h1{
+    font-size:30px;
+    color:#fff;
+  
+}
+#main_wrap .warrior .mouse_hover p{
+    width:330px;
+    font-size:16px;
+    color:#fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align:left;
+    line-height:2;
+}
+
+
+#main_wrap .mouse_hover .list{
+    width:100%;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+
+#main_wrap .mouse_hover .list ul{
+    display:flex;
+   
+}
+
+#main_wrap .mouse_hover .list ul li{
+    width:25%;
+}
+
+#main_wrap .mouse_hover .list ul li a{
+    display:block;
+    color:#fff;
+    text-align:center;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.berserker {
+    display:block;
+    background:url(../image/icon/berserker.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+    
+}
+
+#main_wrap .mouse_hover .list ul li a:hover .index.berserker:nth-child(1){
+    background:url(../image/icon/berserker_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a .index.destroyer{
+    display:block;
+    background:url(../image/icon/deet.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.destroyer:nth-child(1){
+    background:url(../image/icon/deet_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.warlord{
+    display:block;
+    background:url(../image/icon/Warroad.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.warlord{
+    background:url(../image/icon/Warroad_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.holyknight{
+    display:block;
+    background:url(../image/icon/Holi.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.holyknight{
+    background:url(../image/icon/Holi_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+
+#main_wrap .mouse_hover .list ul li a strong{
+    font-weight:400;
+    font-size:16px;
+}
+
+#main_wrap .mouse_hover .list ul li a strong:hover{
+    font-weight:500;
+    font-size:17px;
+}
+
+
+
+
 /*격투가 영역*/
 #main_wrap .fighter{
     position:relative;
@@ -176,6 +322,142 @@ img{
     text-align:center;
    
 }
+/*격투가 hidden 영역*/
+#main_wrap .fighter .mouse_hover{
+    width:100%;
+    height:100%;
+    background-color:#262626;
+    position:absolute;
+    z-index:20;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    transition:0.3s;
+    opacity:0;
+    
+}
+#main_wrap .fighter .mouse_hover.on{
+    opacity:1;
+}
+
+#main_wrap .fighter .mouse_hover .icon_box{
+    display:flex;
+    width:200px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+#main_wrap .fighter .mouse_hover h1{
+    font-size:30px;
+    color:#fff;
+  
+}
+#main_wrap .fighter .mouse_hover p{
+    width:330px;
+    font-size:16px;
+    color:#fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align:left;
+    line-height:2;
+}
+
+
+#main_wrap .mouse_hover .list{
+    width:100%;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+
+#main_wrap .mouse_hover .list ul{
+    display:flex;
+   
+}
+
+#main_wrap .mouse_hover .list ul li{
+    width:25%;
+}
+
+#main_wrap .mouse_hover .list ul li a{
+    display:block;
+    color:#fff;
+    text-align:center;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.battle {
+    display:block;
+    background:url(../image/icon/fightericon/battle.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+    
+}
+
+#main_wrap .mouse_hover .list ul li a:hover .index.battle{
+    background:url(../image/icon/fightericon/battle_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a .index.qigong{
+    display:block;
+    background:url(../image/icon/fightericon/qigong.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.qigong{
+    background:url(../image/icon/fightericon/qigong_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.Speer{
+    display:block;
+    background:url(../image/icon/fightericon/Speer.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.Speer{
+    background:url(../image/icon/fightericon/Speer_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.infighter{
+    display:block;
+    background:url(../image/icon/fightericon/infighter.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.infighter{
+    background:url(../image/icon/fightericon/infighter_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+
+#main_wrap .mouse_hover .list ul li a strong{
+    font-weight:400;
+    font-size:16px;
+}
+
+#main_wrap .mouse_hover .list ul li a strong:hover{
+    font-weight:500;
+    font-size:17px;
+}
+
+
 /*헌터 영역*/
 
 #main_wrap .hunter{
@@ -188,8 +470,144 @@ img{
     bottom:24%;
     transform: translate(-50%,-50%);
     text-align:center;
+}
+/*헌터 hidden 영역*/
+
+#main_wrap .hunter .mouse_hover{
+    width:100%;
+    height:100%;
+    background-color:#262626;
+    position:absolute;
+    z-index:20;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    transition:0.3s;
+    opacity:0;
+    
+}
+#main_wrap .hunter .mouse_hover.on{
+    opacity:1;
+}
+
+#main_wrap .hunter .mouse_hover .icon_box{
+    display:flex;
+    width:200px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+#main_wrap .hunter .mouse_hover h1{
+    font-size:30px;
+    color:#fff;
   
 }
+#main_wrap .hunter .mouse_hover p{
+    width:330px;
+    font-size:16px;
+    color:#fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align:left;
+    line-height:2;
+}
+
+
+#main_wrap .mouse_hover .list{
+    width:100%;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+
+#main_wrap .mouse_hover .list ul{
+    display:flex;
+   
+}
+
+#main_wrap .mouse_hover .list ul li{
+    width:25%;
+}
+
+#main_wrap .mouse_hover .list ul li a{
+    display:block;
+    color:#fff;
+    text-align:center;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.gun {
+    display:block;
+    background:url(../image/icon/huntericon/gun.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+    
+}
+
+#main_wrap .mouse_hover .list ul li a:hover .index.gun{
+    background:url(../image/icon/huntericon/gun_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a .index.scouter{
+    display:block;
+    background:url(../image/icon/huntericon/scouter.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.scouter{
+    background:url(../image/icon/huntericon/scouter_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.Hawkeye{
+    display:block;
+    background:url(../image/icon/huntericon/Hawkeye.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.Hawkeye{
+    background:url(../image/icon/huntericon/Hawkeye_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.blaster{
+    display:block;
+    background:url(../image/icon/huntericon/blaster.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.blaster{
+    background:url(../image/icon/huntericon/blaster_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+
+#main_wrap .mouse_hover .list ul li a strong{
+    font-weight:400;
+    font-size:16px;
+}
+
+#main_wrap .mouse_hover .list ul li a strong:hover{
+    font-weight:500;
+    font-size:17px;
+}
+
+
 
 /*마법사 영역*/
 
@@ -205,11 +623,150 @@ img{
     text-align:center;
  
 }
+/*마법사 hidden 영역*/
+#main_wrap .magician .mouse_hover{
+    width:100%;
+    height:100%;
+    background-color:#262626;
+    position:absolute;
+    z-index:20;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    transition:0.3s;
+    opacity:0;
+    
+}
+#main_wrap .magician .mouse_hover.on{
+    opacity:1;
+}
+
+#main_wrap .magician .mouse_hover .icon_box{
+    display:flex;
+    width:200px;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+
+#main_wrap .magician .mouse_hover h1{
+    font-size:30px;
+    color:#fff;
+  
+}
+#main_wrap .magician .mouse_hover p{
+    width:330px;
+    font-size:16px;
+    color:#fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align:left;
+    line-height:2;
+}
+
+
+#main_wrap .mouse_hover .list{
+    width:100%;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+
+#main_wrap .mouse_hover .list ul{
+    display:flex;
+   
+}
+
+#main_wrap .mouse_hover .list ul li{
+    width:25%;
+}
+
+#main_wrap .mouse_hover .list ul li a{
+    display:block;
+    color:#fff;
+    text-align:center;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.summoner {
+    display:block;
+    background:url(../image/icon/magicianicon/summoner.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+    
+}
+
+#main_wrap .mouse_hover .list ul li a:hover .index.summoner{
+    background:url(../image/icon/magicianicon/summoner_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a .index.bard{
+    display:block;
+    background:url(../image/icon/magicianicon/bard.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.bard{
+    background:url(../image/icon/magicianicon/bard_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.sorceress{
+    display:block;
+    background:url(../image/icon/magicianicon/sorceress.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.sorceress{
+    background:url(../image/icon/magicianicon/sorceress_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.cardtrick{
+    display:block;
+    background:url(../image/icon/magicianicon/cardtrick.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.cardtrick{
+    background:url(../image/icon/magicianicon/cardtrick_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+
+#main_wrap .mouse_hover .list ul li a strong{
+    font-weight:400;
+    font-size:16px;
+}
+
+#main_wrap .mouse_hover .list ul li a strong:hover{
+    font-weight:500;
+    font-size:17px;
+}
 
 /*암살자 영역*/
 
 #main_wrap .assassin{
     position:relative;
+}
+
+#main_wrap .assassin_icon a:hover{
+  
 }
 
 #main_wrap .assassin .assassin_icon{
@@ -220,4 +777,122 @@ img{
     text-align:center;
     
 }
+/*암살자 hidden 영역*/
+#main_wrap .assassin .mouse_hover{
+    width:100%;
+    height:100%;
+    background-color:#262626;
+    position:absolute;
+    z-index:20;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    transition:0.3s;
+    opacity:0;
+    
+}
+#main_wrap .assassin .mouse_hover.on{
+    opacity:1;
+}
 
+#main_wrap .assassin .mouse_hover .icon_box{
+    display:flex;
+    width:200px;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+
+#main_wrap .assassin .mouse_hover h1{
+    font-size:30px;
+    color:#fff;
+  
+}
+#main_wrap .assassin .mouse_hover p{
+    width:330px;
+    font-size:16px;
+    color:#fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align:left;
+    line-height:2;
+}
+
+
+#main_wrap .mouse_hover .list{
+    width:100%;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+
+#main_wrap .mouse_hover .list ul{
+    display:flex;
+   
+}
+
+#main_wrap .mouse_hover .list ul li{
+    width:25%;
+}
+
+#main_wrap .mouse_hover .list ul li a{
+    display:block;
+    color:#fff;
+    text-align:center;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.blade {
+    display:block;
+    background:url(../image/icon/assassinicon/blade.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+    
+}
+
+#main_wrap .mouse_hover .list ul li a:hover .index.blade{
+    background:url(../image/icon/assassinicon/blade_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a .index.reaper{
+    display:block;
+    background:url(../image/icon/assassinicon/reaper.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.reaper{
+    background:url(../image/icon/assassinicon/reaper_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+#main_wrap .mouse_hover .list ul li a .index.devil{
+    display:block;
+    background:url(../image/icon/assassinicon/devil.png) no-repeat 50% 50%;
+    width:100%;
+    height:73px;
+    text-indent:-9999em;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+#main_wrap .mouse_hover .list ul li a:hover .index.devil{
+    background:url(../image/icon/assassinicon/devil_h.png) no-repeat 50% 50%;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+#main_wrap .mouse_hover .list ul li a strong{
+    font-weight:400;
+    font-size:16px;
+}
+
+#main_wrap .mouse_hover .list ul li a strong:hover{
+    font-weight:500;
+    font-size:17px;
+}
